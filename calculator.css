@@ -1,0 +1,23 @@
+.container{
+    width: 365px;
+    height: 450px;
+    background-color: grey;
+    color: red;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-top: 3px;
+    align: center;
+}
+.input1{
+    color: black;
+    padding: 35px;
+    margin: 3px 3px 3px 3px
+
+}
+.result1{
+    color: grey;
+    margin-left: 3px;
+    width: 348px;
+    height: 60px;
+    color: black;
+}

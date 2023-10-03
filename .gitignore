@@ -1,0 +1,6 @@
+__pycache__/
+.DS_Store
+.idea/
+/db.sqlite3
+venv/
+/staticfiles/

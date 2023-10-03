@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+<form>
+    <div class="container">
+        <div class="row">
+            <input class="result1" type="text" id="screen" value=""><br>
+         <input class="input1" type="button" onclick="num(7)" value="7">
+         <input class="input1" type="button" onclick="num(8)" value="8">
+         <input class="input1" type="button" onclick="num(9)" value="9">
+         <input class="input1" type="button" onclick="num('+')" value="+"><br>
+         <input class="input1" type="button" onclick="num(4)" value="4">
+         <input class="input1" type="button" onclick="num(5)" value="5">
+         <input class="input1" type="button" onclick="num(6)" value="6">
+         <input class="input1" type="button" onclick="num('-')" value="-"><br>
+         <input class="input1" type="button" onclick="num(1)" value="1">
+         <input class="input1" type="button" onclick="num(2)" value="2">
+         <input class="input1" type="button" onclick="num(3)" value="3">
+         <input class="input1" type="button" onclick="num('*')" value="*"><br>
+         <input class="input1" type="button" onclick="clearbtn()" value="C">
+         <input class="input1" type="button" onclick="num(0)" value="0">
+            <input class="input1" type="button" onclick="num('/')" value="/">
+            <input class="input1" type="button" onclick="result();" value="=">
+
+
+
+        </div>
+    </div>
+
+    <script>
+        function num(value){
+            document.getElementById('screen').value += value;
+<!--            console.log(eval(a))-->
+        }
+    function result(){
+            a = document.getElementById('screen').value;
+
+            document.getElementById('screen').value = eval(a);
+
+    }
+    function clearbtn(){
+                document.getElementById('screen').value = '';
+
+
+
+    }
+
+    </script>
+</form>
+</body>
+</html>
